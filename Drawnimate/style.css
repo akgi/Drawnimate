@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.canvasContainer {
+    position: relative;
+    flex: 1;
+}
+
+#canvas1, #canvas2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#canvas1 {
+    z-index: 1;
+}
+
+#canvas2 {
+    z-index: 0;
+}
+
+.toolbarContainer {
+    background-image: url('images/j.jpg');
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-top: 2px solid #ccc;
+    padding: 10px;
+}
+
+#colorContainer {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.colorButton {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    border: 1px solid #fff;
+}
+
+#brushContainer {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+input[type="range"] {
+    margin: 0 10px;
+}
+
+#fpsOutput, #brushSizeOut {
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
