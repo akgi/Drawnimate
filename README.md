@@ -1,0 +1,1 @@
+This is a simple web based drawing and animation tool made for a UAS webdevelopment course. This tool allows for drawing images with different coloured brushes, and then creating animations from those images. It is also possible to change the brush size and animation speed.
